@@ -1,0 +1,684 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+    padding: 40px 0 0 0px;
+}
+
+
+/**
+ * TODO LOGO
+ */
+.jumbotron{
+  padding: 15px 0;
+}
+#logo .img{
+  
+  box-shadow:         0px 0px 20px 1px rgba(255, 255, 255, 0.80);
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 255.80);
+  -os-box-shadow:     0px 0px 20px 1px rgba(255, 255, 255, 0.80);
+  -ms-box-shadow:     0px 0px 20px 1px rgba(255, 255, 255, 0.80);
+  -moz-box-shadow:    0px 0px 20px 1px rgba(255, 255, 255, 0.80);
+  
+  border-radius: 75px;
+  display: inline-block;
+  opacity: 0.25;
+}
+
+#logo{
+  text-align: right;
+}
+#logo .titulo{
+  border-width: 0 10px 0 0;
+  border-style: solid;
+  border-color: #252525;
+  padding: 0 8px 0 0;
+  display: inline-block;
+}
+#logo .titulo span{
+  font-size: 28px;
+  display: block;
+  margin: 8px 0;
+}
+#logo .titulo span:first-child{
+  font-size: 34px;
+  color: #000
+}
+#logo .circulo01, #logo .circulo02, #logo .circulo03{
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 15px; 
+  -webkit-border-radius: 15px; 
+  border-radius: 15px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+#logo .circulo01{
+  background: #FFFF00; 
+}
+#logo .circulo02{
+  background: #A4F2A4; 
+}
+#logo .circulo03{
+  background: #1B761B; 
+}
+
+#logo .titulo2{
+  padding: 30px 0 0 0;
+  display: inline-block;
+}
+#logo .titulo2 div{
+  display: inline-block;
+  font-size: 38px;
+  /*padding: 0 50px 0 0;*/
+  vertical-align: top;
+}
+#logo .titulo2 i{
+  font-size: 36px;
+  padding: 0 15px;
+}
+#logo .titulo2 .f1{
+  color: #1B761B;
+}
+#logo .titulo2 .f2{
+  color: #FFFF00;
+}
+
+
+#logo p{
+  margin: 0px;
+  padding: 0px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+
+/**
+ * OTROS
+ */
+.navbar a{
+    cursor: pointer;
+}
+
+.navbar .controls {
+    padding: 5px 0 0 0;
+}
+
+.filtro{
+    max-height: 250px; /* Alto */
+    min-width: 190px;
+    max-width: 350px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#tblIndicadores textarea {
+    width: 90px;
+    height: 30px;
+    -webkit-resize: none;
+    -moz-resize: none;
+    resize: none;
+    /*
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    */
+}
+
+.tdIndicadores{
+  padding: 0 0 0 10px;
+}
+
+.errInput {
+  border: 1px solid #FF0000;
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+
+}
+
+#tblIndicadoresFloat{
+    display: none;
+    left: 0px;
+    position: fixed;
+    top: 45px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    -os-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    -ms-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    z-index: 5;
+}
+
+.dropdown li a input{
+  cursor: not-allowed;
+}
+
+.dropdown .search{
+   display: none;
+}
+
+
+/**
+ * PARA NO OCULTAR DROPDOWN DE BOOTSTRAP
+ */
+.customOpen {
+    *z-index:1000;
+}
+.customOpen > .dropdown-menu {
+    display: block;
+}
+.navbar-inverse .nav li.dropdown.customOpen > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.customOpen.active > .dropdown-toggle {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+.navbar-inverse .nav li.dropdown.customOpen > .dropdown-toggle .caret, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret, .navbar-inverse .nav li.dropdown.customOpen.active > .dropdown-toggle .caret{
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+
+
+/**
+ * MUESTRA Y ALINEA ELEMNTOS PARA LOS FILTROS DENTRO DEL MENU
+ * EJ. DIVS, LABELS, CHECKBOX
+ */
+.filtros{
+    text-align: center;
+}
+
+.filtros > div{
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.filtros label{
+    display: inline-block;
+}
+
+.filtros label:hover{
+    text-decoration: underline;;
+}
+
+.filtros input[type="checkbox"]{
+    margin: -4px 0 0 0;
+}
+
+
+/**
+ * OTROS
+ */
+.input-prepend input{
+   border-radius : 0px 4px 4px 0px;
+}
+
+.input-append input{
+   border-radius : 4px 0px 0px 4px;
+}
+
+/*
+ * CORRIJIENDO DATEPICKER DE PLUGIN BOOTSTRAP
+ */
+.input-append .add-on {
+    margin: 1px 0px 0px -1px;
+}
+.input-prepend .add-on {
+    margin: -1px 0px 0px 1px;
+}
+
+.date .add-on, .date .add-on{
+    padding: 6px 4px 2px 5px;
+}
+
+
+.tableHeader, .tableHeaderFloat{
+    background:#CCC;
+    border-radius:16px; 
+    -moz-border-radius:13px; /* Firefox */ 
+    -webkit-border-radius:13px; /* Safari y Chrome */ 
+    -o-border-radius:13px; /* Safari y Chrome */ 
+    -ms-border-radius:13px; /* Safari y Chrome */ 
+    font-size: 14px;
+    color: #000
+}
+
+.subHeader01, tbody .subHeader01:hover{
+    /*background: #61DC61; */
+    font-size: 13px;
+    color: #000;
+    background: #61dc61; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #61dc61 0%, #cdf8cd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#61dc61), color-stop(100%,#cdf8cd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #61dc61 0%,#cdf8cd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #61dc61 0%,#cdf8cd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #61dc61 0%,#cdf8cd 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #61dc61 0%,#cdf8cd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61dc61', endColorstr='#cdf8cd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.subHeader02, tbody .subHeader02:hover{
+    /*background:#CDF8CD;*/
+    font-size: 13px;
+    color: #000;
+    background: #cdf8cd; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #cdf8cd 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#cdf8cd), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #cdf8cd 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #cdf8cd 0%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #cdf8cd 0%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #cdf8cd 0%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdf8cd', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.subTotal02 div {
+    font-weight: bold; 
+    border-top-width: 3px;
+    border-top-style: dashed;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+.subTotal01 div {
+    font-weight: bold; 
+    border-top-width: 3px;
+    border-top-style: double;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+.subTotal01 td:first-child, .subTotal02 td:first-child {
+  text-align : right;
+  padding: 5px 15px 0 0;
+}
+/*
+.subTotal01 .leftTotal{
+  background: #cdf8cd; 
+  background: -moz-linear-gradient(-45deg,  #cdf8cd 0%, #61dc61 100%); 
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#cdf8cd), color-stop(100%,#61dc61));
+  background: -webkit-linear-gradient(-45deg,  #cdf8cd 0%,#61dc61 100%); 
+  background: -o-linear-gradient(-45deg,  #cdf8cd 0%,#61dc61 100%); 
+  background: -ms-linear-gradient(-45deg,  #cdf8cd 0%,#61dc61 100%); 
+  background: linear-gradient(135deg,  #cdf8cd 0%,#61dc61 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdf8cd', endColorstr='#61dc61',GradientType=1 ); 
+}
+
+.subTotal01 .rightTotal{
+  background: #61dc61; 
+  background: -moz-linear-gradient(-45deg,  #61dc61 0%, #cdf8cd 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#61dc61), color-stop(100%,#cdf8cd)); 
+  background: -webkit-linear-gradient(-45deg,  #61dc61 0%,#cdf8cd 100%); 
+  background: -o-linear-gradient(-45deg,  #61dc61 0%,#cdf8cd 100%); 
+  background: -ms-linear-gradient(-45deg,  #61dc61 0%,#cdf8cd 100%); 
+  background: linear-gradient(135deg,  #61dc61 0%,#cdf8cd 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61dc61', endColorstr='#cdf8cd',GradientType=1 ); 
+}
+*/
+
+/* Selección */      
+::selection { background:#53EF15; color:#000;  }
+::-moz-selection { background:#53EF15; color:#000;  }
+::-o-selection { background:#53EF15; color:#000;  }
+::-webkit-selection { background:#53EF15; color:#000;  }
+::-ms-selection { background:#53EF15; color:#000;  }
+/*::-ms-selection { background:#ff0084; color:#FFF; }*/
+
+.breadcrumb{
+    margin: 60px 0;
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+     height: 200px;
+}
+
+.ui-autocomplete-label {
+    text-align: right;
+    float: right;
+    color: #777;
+    text-transform: lowercase;
+}
+
+.ui-autocomplete-term { 
+    font-weight: bold; 
+    color: green; 
+    text-transform : uppercase;
+}
+
+/**
+ * MODIFICANDO EL TOOLTIP ORIGINAL PARA ALINEAR
+ *  EL MENSAJE CUANDO APARECE A LA IZQUIERDA
+ */
+.arrow.left {
+    top : 30%;
+    left: -13px; /*-15%*/
+    right: 0;
+    bottom:-16px;
+}
+
+.arrow.top {
+    top: -13px;
+    bottom: 22px;
+    left: 42%;
+}
+
+
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+.datepicker {
+  top: 0;
+  left: 0;
+  padding: 4px;
+  margin-top: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  z-index: 2;
+  /*.dow {
+    border-top: 1px solid #ddd !important;
+  }*/
+
+}
+.datepicker:before {
+  content: '';
+  display: inline-block;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -7px;
+  left: 6px;
+}
+.datepicker:after {
+  content: '';
+  display: inline-block;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  position: absolute;
+  top: -6px;
+  left: 7px;
+}
+.datepicker > div {
+  display: none;
+}
+.datepicker table {
+  width: 100%;
+  margin: 0;
+}
+.datepicker td,
+.datepicker th {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.datepicker td.day:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+.datepicker td.day.disabled {
+  color: #eeeeee;
+}
+.datepicker td.old,
+.datepicker td.new {
+  color: #999999;
+}
+.datepicker td.active,
+.datepicker td.active:hover {
+  color: #ffffff;
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:focus,
+.datepicker td.active:hover:focus,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active {
+  background-color: #003399 \9;
+}
+.datepicker td span {
+  display: block;
+  width: 47px;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 2px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.datepicker td span:hover {
+  background: #eeeeee;
+}
+.datepicker td span.active {
+  color: #ffffff;
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+.datepicker td span.active:active,
+.datepicker td span.active.active {
+  background-color: #003399 \9;
+}
+.datepicker td span.old {
+  color: #999999;
+}
+.datepicker th.switch {
+  width: 145px;
+}
+.datepicker th.next,
+.datepicker th.prev {
+  font-size: 21px;
+}
+.datepicker thead tr:first-child th {
+  cursor: pointer;
+}
+.datepicker thead tr:first-child th:hover {
+  background: #eeeeee;
+}
+.input-append.date .add-on i,
+.input-prepend.date .add-on i {
+  display: block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+
+/*
+ * CHECKBOXS BONITOS
+ */
+
+/* SQUARED THREE */
+.squaredThree {
+    width: 20px;    
+    margin: 20px auto;
+    position: relative;
+}
+
+.squaredThree label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 4px;
+
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+
+    background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+    background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+    background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+    background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+.squaredThree label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
+.squaredThree input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+/* SQUARED FOUR */
+.squaredFour {
+    width: 20px;    
+    margin: 20px auto;
+    position: relative;
+}
+
+.squaredFour label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 4px;
+
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    background: #fcfff4;
+
+    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.squaredFour label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squaredFour label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.5;
+}
+
+.squaredFour input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
